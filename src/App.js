@@ -3,6 +3,9 @@ import SearchBar from './components/search_bar';
 import MovieDetail from './components/movie_detail';
 import './App.css';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+console.log(API_KEY);
+
 class App extends Component {
   render() {
     return (
