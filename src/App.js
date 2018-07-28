@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBar from './components/search_bar';
 import MovieDetail from './components/movie_detail';
+import './App.css';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -27,7 +28,7 @@ class App extends Component {
     if (movie) {
       console.log(data);
       this.setState({
-        title: data.results.title,
+        title: data.results[0].title,
         tagline: data.results[0].tagline,
         overview: data.results[0].overview,
         vote_average: data.results[0].vote_average,
