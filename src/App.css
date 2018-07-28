@@ -2,9 +2,9 @@ body {
   margin: 0 auto;
   width: 800px;
   color: white;
-  background-image: url('background.jpg');
+  background-image: url('background.png');
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }
 
 .App {
@@ -36,13 +36,14 @@ body {
 }
 
 .input {
-  width: 700px;
+  width: 759px;
   height: 40px;
   font-size: 30px;
   border: 0px;
-  border-bottom: 3px solid #666666;
+  border-bottom: 2px solid #01d277; 
   background-color: transparent;
-  color: #666666;
+  color: white;
+
 }
 
 .input:focus {
@@ -51,7 +52,7 @@ body {
 }
 
 .input::placeholder {
-  opacity: 0.3;
+  opacity: 0.75;
 }
 
 .search-btn {
@@ -78,9 +79,13 @@ body {
 }
 
 .input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px transparent inset;
+  -webkit-box-shadow: 0 0 0 0 transparent inset;
 }
 
 .logo {
   width: 150px;
+}
+
+.title {
+  color: #01d277;
 }

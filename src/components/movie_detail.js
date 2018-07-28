@@ -12,19 +12,19 @@ const MovieDetail = (props) => {
       </div>
 
       <div className="col-2">
-        { props.title && <h1 className="movie-title">{props.title}</h1> }
+        { props.title && <h1 className="movie-title title">{props.title}</h1> }
         { props.tagline && <h3>{props.tagline}</h3> }
         { props.overview && <p className="overview">{props.overview}</p>}
 
         { props.release_date && 
           <p className="release-date">
-            <strong>Release Date: </strong>{props.release_date}
+            <strong className="title">Release Date: </strong>{props.release_date}
           </p> 
         }
 
         { props.vote_average && 
           <p className="vote-average">
-            <strong>IMDb Rating: </strong>{props.vote_average}
+            <strong className="title">IMDb Rating: </strong>{props.vote_average}
           </p> 
         }
 

@@ -11,7 +11,9 @@ const SearchBar = (props) => {
           <input type="text" name="movie" 
           placeholder="Search for a movie" 
           className="input" />
-          <button className="search-btn">Search</button>
+          <button className="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </div>
   );
