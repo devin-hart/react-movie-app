@@ -4,8 +4,10 @@ class SearchBar extends Component {
   render() {
     return (
       <div>
-        Test SearchBar
-        <input type="text"/>
+        <form onSubmit={this.props.getMovie}>
+          <input type="text" name="Movie" placeholder="Search for a movie"/>
+          <button>Search</button>
+        </form>
       </div>
     );
   }
