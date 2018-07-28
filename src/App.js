@@ -48,8 +48,8 @@ class App extends Component {
         poster_path: undefined,
         runtime: undefined,
         error: 'Movie not found.'
-    });
-  }
+      });
+    }
   }
   
   render() {

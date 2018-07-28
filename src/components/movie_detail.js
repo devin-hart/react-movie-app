@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieDetail = (props) => {
   return (
-    <div>
+    <div className="movie-detail">
       <div className="col-1">
         { props.poster_path && 
           <img src={`https://image.tmdb.org/t/p/w500/${props.poster_path}`} 

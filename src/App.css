@@ -1,5 +1,5 @@
 body {
-  margin: 10px auto;
+  margin: 0 auto;
   width: 800px;
   color: white;
   background-image: url('background.jpg');
@@ -7,19 +7,25 @@ body {
   background-size: 100vw;
 }
 
+.App {
+  margin-top: 100px;
+}
+
 .movie-detail {
   display: grid;
   grid-template-columns: 250px 1fr;
+  height: 375px;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .col-1 {
   grid: 1;
-  margin: 5px;
 }
 
 .col-2 {
   grid: 2;
-  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
@@ -73,4 +79,8 @@ body {
 
 .input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px transparent inset;
+}
+
+.logo {
+  width: 150px;
 }
