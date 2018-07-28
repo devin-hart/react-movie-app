@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import SearchBar from './components/search_bar';
 import MovieDetail from './components/movie_detail';
-import './App.css';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 class App extends Component {
   state = {
+    movies: [],
     title: undefined,
     tagline: undefined,
     overview: undefined,
@@ -27,7 +27,7 @@ class App extends Component {
     if (movie) {
       console.log(data);
       this.setState({
-        title: data.results[0].title,
+        title: data.results.title,
         tagline: data.results[0].tagline,
         overview: data.results[0].overview,
         vote_average: data.results[0].vote_average,
@@ -35,7 +35,8 @@ class App extends Component {
         poster_path: data.results[0].poster_path,
         runtime: data.results[0].runtime,
         error: ''
-      });
+      }
+    );
     } else {
       this.setState({
         title: undefined,
