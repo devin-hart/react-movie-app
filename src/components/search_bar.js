@@ -5,7 +5,7 @@ class SearchBar extends Component {
     return (
       <div>
         <form onSubmit={this.props.getMovie}>
-          <input type="text" name="Movie" placeholder="Search for a movie"/>
+          <input type="text" name="movie" placeholder="Search for a movie"/>
           <button>Search</button>
         </form>
       </div>
