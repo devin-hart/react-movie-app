@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class SearchBar extends Component {
-  render() {
-    return (
-      <div>
-        <form onSubmit={this.props.getMovie}>
+const SearchBar = (props) => {
+  return (
+    <div>
+        <form onSubmit={props.getMovie}>
           <input type="text" name="movie" placeholder="Search for a movie"/>
           <button>Search</button>
         </form>
       </div>
-    );
-  }
+  );
 }
 
 
