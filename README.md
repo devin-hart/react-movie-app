@@ -1,9 +1,19 @@
 # React Movie App
 *creative name!*
 
-A clone of a different React Movie App using the TMDB.org API. Similar styling and set up **entirely different code.** 
+A recreation of a different React Movie App using the TMDB.org API. Similar styling and set up **entirely different code.** 
 
 This current version of the app is a boilerplate for a larger project I have in mind.
+
+## Setup
+
+* Clone or download repository.
+
+* Open directory in your bash/terminal and run `npm install`.
+
+* In `src/App.js` replace the value of the `const API_KEY = ` with your TMDB.org API key.
+
+* In your bash/terminal run `npm start`.
 
 ## Future Updates
 * Possibly use a different API and take the app in a different direction.
